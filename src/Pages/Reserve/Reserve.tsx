@@ -2,7 +2,6 @@ import { useState } from "react";
 import ButtonSelect from "../../Components/ButtonSelect/ButtonSelect";
 import SplashScreen from "../../Components/SplashScreen/SplashScreen";
 import styles from "./Reserve.module.scss";
-import bannerShape from "./../../assets/banner-shape.svg";
 import userIcon from "./../../assets/user.svg";
 import group2Icon from "./../../assets/group2.svg";
 import group3Icon from "./../../assets/group3.svg";
@@ -17,13 +16,11 @@ const Reserve: React.FC = () => {
     <>
       <SplashScreen />
       <main className={styles.Reserve}>
-        <div className={styles.Banner}>
-          <img src={bannerShape} />
-        </div>
+        <div className={styles.Banner}></div>
 
         <h1>Reserveer jouw bezoek bij [uw locatie]</h1>
 
-        <section>
+        <section className={styles.PersonSelectSection}>
           <h2>Personen</h2>
           <label htmlFor="person-select">Met hoeveel personen kom je?</label>
 
@@ -59,8 +56,8 @@ const Reserve: React.FC = () => {
           <DatePicker />
         </section>
 
-        <section>
-          <h2>Selecteer uw Tijsslot</h2>
+        <section className={styles.TimeslotSelectSection}>
+          <h2>Selecteer uw Tijdsslot</h2>
           <label htmlFor="timeslot-select">
             Hoe laat wil je ongeveer langskomen?
           </label>
@@ -80,7 +77,9 @@ const Reserve: React.FC = () => {
           />
         </section>
 
-        <Button>Verder</Button>
+        <section className={styles.ButtonSection}>
+          <Button>Verder</Button>
+        </section>
       </main>
     </>
   );

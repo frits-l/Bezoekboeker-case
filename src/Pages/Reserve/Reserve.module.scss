@@ -1,8 +1,5 @@
 .Reserve {
-  background: linear-gradient(
-    var(--color-primary) 30%,
-    var(--color-primary-light)
-  );
+  background: linear-gradient(var(--color-primary), var(--color-primary-light));
   color: var(--color-white);
   text-align: left;
 
@@ -10,11 +7,11 @@
     margin-bottom: 0;
   }
 
-  section {
-    padding: 2rem;
-  }
+  // section {
+  //   padding: 2rem;
+  // }
   h1 {
-    margin: 0 2rem;
+    margin: 2rem 2rem 0 2rem;
   }
 }
 
@@ -30,28 +27,8 @@
   align-items: flex-end;
 
   img {
-    // @media (min-width: 800px) {
-    //   display: none;
-    // }
-
     width: 100%;
     color: blue;
-  }
-
-  &::before {
-    content: "hoi";
-    background-color: var(--color-primary);
-    height: 25%;
-    width: 90%;
-    border-radius: 22% 78% 0% 100% / 100% 0% 100% 0%;
-  }
-  &::after {
-    content: "doei";
-    background-color: var(--color-primary);
-    height: 70%;
-    width: 10%;
-
-    border-radius: 100% 0% 100% 0% / 66% 100% 0% 34%;
   }
 }
 
@@ -73,9 +50,13 @@
   }
 }
 
-.DateSection {
-  background-color: var(--color-white);
+.PersonSelectSection {
+  padding: 0 2rem 2rem 2rem;
+}
 
+.DateSection {
+  padding: 2rem;
+  background-color: var(--color-white);
   border-radius: 50px 0 0 0;
 
   h2 {
@@ -86,6 +67,16 @@
     color: var(--color-text-light-grey);
     font-weight: bold;
   }
+}
+
+.TimeslotSelectSection {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.ButtonSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .TimeSlotSelect {

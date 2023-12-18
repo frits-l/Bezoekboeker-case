@@ -2,6 +2,14 @@
   background-color: var(--color-secondary);
   color: var(--color-white);
   border: none;
+  border-radius: 22px;
+  margin: 25px;
+  padding: 9px 40px;
+  font-size: 15px;
+  cursor: pointer;
+  transform: scale(1);
 
-  padding: 20px;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
