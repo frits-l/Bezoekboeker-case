@@ -1,0 +1,96 @@
+.Reserve {
+  background: linear-gradient(
+    var(--color-primary) 30%,
+    var(--color-primary-light)
+  );
+  color: var(--color-white);
+  text-align: left;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  section {
+    padding: 2rem;
+  }
+  h1 {
+    margin: 0 2rem;
+  }
+}
+
+.Banner {
+  background-image: url("/src/assets/stock.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 300px;
+  display: flex;
+
+  align-items: flex-end;
+
+  img {
+    // @media (min-width: 800px) {
+    //   display: none;
+    // }
+
+    width: 100%;
+    color: blue;
+  }
+
+  &::before {
+    content: "hoi";
+    background-color: var(--color-primary);
+    height: 25%;
+    width: 90%;
+    border-radius: 22% 78% 0% 100% / 100% 0% 100% 0%;
+  }
+  &::after {
+    content: "doei";
+    background-color: var(--color-primary);
+    height: 70%;
+    width: 10%;
+
+    border-radius: 100% 0% 100% 0% / 66% 100% 0% 34%;
+  }
+}
+
+.PersonButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    height: 30px;
+  }
+
+  span {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Palanquin", sans-serif;
+  }
+}
+
+.DateSection {
+  background-color: var(--color-white);
+
+  border-radius: 50px 0 0 0;
+
+  h2 {
+    color: var(--color-primary);
+  }
+
+  label {
+    color: var(--color-text-light-grey);
+    font-weight: bold;
+  }
+}
+
+.TimeSlotSelect {
+  button {
+    background-color: rgba(255, 255, 255, 0.226);
+    border: none;
+  }
+}

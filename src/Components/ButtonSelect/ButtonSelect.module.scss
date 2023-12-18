@@ -1,0 +1,49 @@
+.ButtonSelect {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 0;
+  li {
+    position: relative;
+    list-style: none;
+  }
+}
+
+.button {
+  background-color: transparent;
+  width: 80px;
+  height: 120px;
+  margin: 10px;
+
+  flex: 0 0 auto;
+
+  border: 1px solid var(--color-text-light-blue);
+  border-radius: 6px;
+
+  span {
+    color: var(--color-white);
+    font-size: 15px;
+    font-family: "Palanquin", sans-serif;
+  }
+
+  &.selected {
+    background-color: var(--color-secondary);
+
+    border: none;
+  }
+}
+
+.Checked {
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  right: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: var(--color-green);
+}

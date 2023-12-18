@@ -1,0 +1,88 @@
+:root {
+  font-family: "Palanquin", sans-serif;
+
+  background-color: #242424;
+
+  line-height: 1.3;
+
+  --color-primary: #319dfa;
+  --color-primary-light: #3fcdfc;
+  --color-secondary: #0065f8;
+
+  --color-white: white;
+  --color-green: #00e5b3;
+  --color-sub-title: white;
+
+  --color-text-light-blue: #ffffffa6;
+  --color-text-light-grey: #989898;
+
+  --font-header: 37px;
+  --font-sub-header: 20px;
+  --font-paragraph: 15px;
+}
+button {
+  font-family: inherit;
+}
+h1 {
+  font-size: 37px;
+}
+h2 {
+  font-size: 25px;
+}
+
+@font-face {
+  font-family: "Palanquin";
+  src: url("/fonts/Palanquin-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palanquin";
+  src: url("/fonts/Palanquin-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palanquin";
+  src: url("/fonts/Palanquin-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palanquin";
+  src: url("/fonts/Palanquin-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palanquin";
+  src: url("/fonts/Palanquin-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+// a {
+//   font-weight: 500;
+//   color: #646cff;
+//   text-decoration: inherit;
+// }
+// a:hover {
+//   color: #535bf2;
+// }
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+// h1 {
+//   font-size: 3.2em;
+//   line-height: 1.1;
+// }
