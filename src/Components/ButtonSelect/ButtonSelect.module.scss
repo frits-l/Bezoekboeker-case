@@ -7,6 +7,12 @@
     position: relative;
     list-style: none;
   }
+
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+  }
 }
 
 .button {

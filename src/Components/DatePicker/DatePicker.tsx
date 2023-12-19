@@ -66,17 +66,17 @@ const DatePicker = () => {
 
       <div className={styles.Calendar}>
         {dayNames.map((day, index) => (
-          <div className={styles.DayTitle} key={index}>
+          <span className={styles.DayTitle} key={index}>
             {day}
-          </div>
+          </span>
         ))}
         {days.map((day, index) => (
-          <div
+          <span
             className={`${styles.Day} ${day === 13 && styles.selected}`}
             key={index}
           >
             {day}
-          </div>
+          </span>
         ))}
       </div>
     </section>
